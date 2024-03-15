@@ -52,6 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="qlPhongBan.aspx">Quản lý phòng ban</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addNhanVien.aspx">Thêm nhân viên</a>
+                    </li>
                 </ul>
                 <form class="float-right search-size">
                     <input type="text" class="search-input" id="floatingInput" placeholder="Search">

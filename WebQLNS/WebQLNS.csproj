@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addNhanVien.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -191,6 +192,13 @@
     <Content Include="SiteLayout.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNhanVien.aspx.cs">
+      <DependentUpon>addNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addNhanVien.aspx.designer.cs">
+      <DependentUpon>addNhanVien.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
