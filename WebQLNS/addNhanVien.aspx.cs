@@ -45,5 +45,15 @@ namespace WebQLNS
             }
 
         }
+
+        protected void radNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void radNu_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

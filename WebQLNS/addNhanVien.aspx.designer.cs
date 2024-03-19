@@ -33,13 +33,13 @@ namespace WebQLNS
         protected global::System.Web.UI.WebControls.TextBox txtTen;
 
         /// <summary>
-        /// radNu control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton radNu;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// radNam control.
@@ -49,6 +49,15 @@ namespace WebQLNS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton radNam;
+
+        /// <summary>
+        /// radNu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton radNu;
 
         /// <summary>
         /// txtNgaySinh control.

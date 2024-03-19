@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="NoiDung" runat="server">
-    <form runat="server">
+    <form>
         <div class="container">
             <div class="row mb-2">
                 <div class="row col-2">Họ nhân viên:</div>
@@ -14,12 +14,13 @@
                 <asp:TextBox CssClass="row col-10" ID="txtTen" runat="server"></asp:TextBox>
             </div>
             <div class="row mb-2">
-                <div class="row col-2">Phái:</div>
+                <div class="row col-2">
+                    <asp:Label ID="Label1" runat="server" Text="Phái:"></asp:Label>
+
+                </div>
                 <div cssclass="row col-10">
-                    <asp:RadioButton ID="radNu" GroupName="radGioiTinh" runat="server" Text="Nữ"/>
-                   
-                <asp:RadioButton ID="radNam" Checked="true" GroupName="radGioiTinh" runat="server" Text="Nam" />
-                    
+                    <asp:RadioButton ID="radNam" Checked="true" runat="server" Text="Nam" GroupName="radGT"/> 
+                    <asp:RadioButton ID="radNu" runat="server" Text="Nữ" GroupName="radGT" /> 
                 </div>
             </div>
             <div class="row mb-2">
@@ -37,9 +38,9 @@
             <div class="row mb-2">
                 <asp:Button CssClass="btn btn-success" ID="Button1" runat="server" Text="Lưu" OnClick="Button1_Click" />
             </div>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString5 %>" SelectCommand="SELECT * FROM [PhongBan]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" SelectCommand="SELECT * FROM [PhongBan]"></asp:SqlDataSource>
             <asp:Label ID="thongBao" runat="server" Text=""></asp:Label>
         </div>
-        </form>
+    </form>
 
 </asp:Content>

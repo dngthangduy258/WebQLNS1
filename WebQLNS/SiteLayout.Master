@@ -42,7 +42,7 @@
 
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Trang Chủ</a>
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
 
@@ -55,6 +55,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="addNhanVien.aspx">Thêm nhân viên</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qlTheLoai.aspx">Quản lý thể loại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qlTinTuc.aspx">Quản lý tin tức</a>
+                    </li>
+                    
                 </ul>
                 <form class="float-right search-size">
                     <input type="text" class="search-input" id="floatingInput" placeholder="Search">
@@ -63,14 +70,17 @@
             </div>
         </nav>
     </div>
-    <div class="card-body" style="min-height: 500px">
-        <asp:ContentPlaceHolder ID="NoiDung" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
-    <div class="card-footer bg-info">
+    <form id="form1" runat="server">
+        <div class="card-body" style="min-height: 500px">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div class="card-footer bg-info" style="max-height:100px">
         Dương Thanh Duy - 2221160053
        
+   
     </div>
-
+    
 </body>
 </html>

@@ -35,7 +35,7 @@
                 background-color: #C44569;
             }
     </style>
-    <form id="form1" runat="server">
+    <form>
         <h1 class="text-center">DANH SÁCH NHÂN VIÊN</h1>
         <asp:SqlDataSource ID="dsNhanVien" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" DeleteCommand="DELETE FROM [NhanVien] WHERE [MaNV] = @MaNV" InsertCommand="INSERT INTO [NhanVien] ([HoNV], [TenNV], [Phai], [NgaySinh], [NoiSinh], [MaPhong]) VALUES (@HoNV, @TenNV, @Phai, @NgaySinh, @NoiSinh, @MaPhong)" SelectCommand="SELECT * FROM [NhanVien]" UpdateCommand="UPDATE [NhanVien] SET [HoNV] = @HoNV, [TenNV] = @TenNV, [Phai] = @Phai, [NgaySinh] = @NgaySinh, [NoiSinh] = @NoiSinh, [MaPhong] = @MaPhong WHERE [MaNV] = @MaNV">
             <DeleteParameters>
@@ -60,7 +60,7 @@
             </UpdateParameters>
 
         </asp:SqlDataSource>
-        <asp:SqlDataSource ID="test" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString4 %>" DeleteCommand="DELETE FROM [NhanVien] WHERE [MaNV] = @MaNV" InsertCommand="INSERT INTO [NhanVien] ([HoNV], [TenNV], [Phai], [NgaySinh], [NoiSinh], [MaPhong]) VALUES (@HoNV, @TenNV, @Phai, @NgaySinh, @NoiSinh, @MaPhong)" SelectCommand="SELECT * FROM [NhanVien]" UpdateCommand="UPDATE [NhanVien] SET [HoNV] = @HoNV, [TenNV] = @TenNV, [Phai] = @Phai, [NgaySinh] = @NgaySinh, [NoiSinh] = @NoiSinh, [MaPhong] = @MaPhong WHERE [MaNV] = @MaNV">
+        <asp:SqlDataSource ID="test" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" DeleteCommand="DELETE FROM [NhanVien] WHERE [MaNV] = @MaNV" InsertCommand="INSERT INTO [NhanVien] ([HoNV], [TenNV], [Phai], [NgaySinh], [NoiSinh], [MaPhong]) VALUES (@HoNV, @TenNV, @Phai, @NgaySinh, @NoiSinh, @MaPhong)" SelectCommand="SELECT * FROM [NhanVien]" UpdateCommand="UPDATE [NhanVien] SET [HoNV] = @HoNV, [TenNV] = @TenNV, [Phai] = @Phai, [NgaySinh] = @NgaySinh, [NoiSinh] = @NoiSinh, [MaPhong] = @MaPhong WHERE [MaNV] = @MaNV">
             <DeleteParameters>
                 <asp:Parameter Name="MaNV" Type="Int32" />
             </DeleteParameters>
@@ -82,7 +82,7 @@
                 <asp:Parameter Name="MaNV" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView CssClass="w-75 m-auto" ID="gvNhanVien"  runat="server" DataSourceID="dsNhanVien" AutoGenerateColumns="False" AllowPaging="true" PageSize="5"
+        <asp:GridView CssClass="w-75 m-auto" ID="gvNhanVien"  runat="server" DataSourceID="dsNhanVien" AutoGenerateColumns="False" AllowPaging="true" PageSize="7"
             DataKeyNames="MaNV" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" BorderStyle="Solid">
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>

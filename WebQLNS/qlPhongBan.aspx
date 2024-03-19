@@ -56,7 +56,7 @@
             box-sizing: border-box; /* Ensures padding and border are included in width */
         }
     </style>
-    <form id="form1" runat="server">
+    <form >
         <h1 class="text-center">QUẢN LÝ PHÒNG BAN<asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:DSNhanVienPhongBan %>" ProviderName="<%$ ConnectionStrings:DSNhanVienPhongBan.ProviderName %>" SelectCommand="SELECT * FROM [NhanVien] WHERE ([MaPhong] = @MaPhong)" ID="ctl202">
             <SelectParameters>
                 <asp:ControlParameter ControlID="ctl198" PropertyName="SelectedValue" Name="MaPhong" Type="Int32"></asp:ControlParameter>
@@ -67,7 +67,7 @@
             <asp:DropDownList  runat="server" AutoPostBack="True" DataTextField="TenPhong" DataValueField="MaPhong" DataSourceID="ctl05" ID="ctl198"></asp:DropDownList>
         </div>
         <div>
-        <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString3 %>" DeleteCommand="DELETE FROM [PhongBan] WHERE [MaPhong] = @MaPhong" InsertCommand="INSERT INTO [PhongBan] ([TenPhong]) VALUES (@TenPhong)" ProviderName="<%$ ConnectionStrings:QLNhanVienConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM [PhongBan]" UpdateCommand="UPDATE [PhongBan] SET [TenPhong] = @TenPhong WHERE [MaPhong] = @MaPhong" ID="ctl05">
+        <asp:SqlDataSource runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" DeleteCommand="DELETE FROM [PhongBan] WHERE [MaPhong] = @MaPhong" InsertCommand="INSERT INTO [PhongBan] ([TenPhong]) VALUES (@TenPhong)" ProviderName="<%$ ConnectionStrings:QLNhanVienConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [PhongBan]" UpdateCommand="UPDATE [PhongBan] SET [TenPhong] = @TenPhong WHERE [MaPhong] = @MaPhong" ID="ctl05">
             <DeleteParameters>
                 <asp:Parameter Name="MaPhong" Type="Int32"></asp:Parameter>
             </DeleteParameters>
