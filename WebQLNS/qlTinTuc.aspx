@@ -29,7 +29,7 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="dsTinTuc" ForeColor="#333333" GridLines="None">
+    <asp:GridView Width="100%" ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="dsTinTuc" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
@@ -38,6 +38,8 @@
             <asp:ImageField DataImageUrlField="Hinh" DataImageUrlFormatString="~/Upload/{0}" ControlStyle-Width="100px"/>
             <asp:BoundField DataField="TheLoaiID" HeaderText="TheLoaiID" SortExpression="TheLoaiID" />
             <asp:CommandField ControlStyle-CssClass="btn btn-success" ItemStyle-CssClass="text-center" ShowDeleteButton="true" />
+            <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="~/SuaBanTin.aspx?id={0}" Text="Edit" />
+
 
         </Columns>
         <EditRowStyle BackColor="#999999" />

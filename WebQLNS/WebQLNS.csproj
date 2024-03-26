@@ -528,6 +528,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="SuaBanTin.aspx" />
     <Content Include="ThemBanTin.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -588,6 +589,13 @@
     </Compile>
     <Compile Include="SiteLayout.Master.designer.cs">
       <DependentUpon>SiteLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SuaBanTin.aspx.cs">
+      <DependentUpon>SuaBanTin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuaBanTin.aspx.designer.cs">
+      <DependentUpon>SuaBanTin.aspx</DependentUpon>
     </Compile>
     <Compile Include="ThemBanTin.aspx.cs">
       <DependentUpon>ThemBanTin.aspx</DependentUpon>
